@@ -148,6 +148,9 @@ def enter(event):
     kontrola()
 main.bind('<Return>', enter)
 
+def escape(event):
+    main.destroy()
+main.bind("<Escape>", escape)
 
 
 #výběr operace
