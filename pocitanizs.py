@@ -10,8 +10,7 @@ from random import randint, randrange
 main = tk.Tk()
 main.title("Počítání")
 
-global dobre
-global spatne
+
 dobre = 0
 spatne = 0
 
@@ -35,6 +34,7 @@ def plus():
     cisloAentry.config(state="readonly")
     cisloBentry.config(state="readonly")
     znamenkoEntry.config(state="readonly")
+    
     
 
 
@@ -115,6 +115,7 @@ def kontrola():
     znamenkoEntry.config(state="normal")
     vysledekEntry.config(state="normal")
     
+    randchoice(1)
     try:
         spravne = int(vysledekEntry.get())
         cisloAentry.delete(0, tk.END)
